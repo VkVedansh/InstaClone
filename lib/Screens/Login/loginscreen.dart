@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instaclone/Screens/Login/signupscreen.dart';
 import 'package:instaclone/Uihelper/uihelper.dart';
+import 'package:instaclone/Widgets/BottomNavigation/bottomnav.dart';
 
 class Loginscreen extends StatelessWidget {
   TextEditingController emailcontroller = TextEditingController();
@@ -46,7 +47,12 @@ class Loginscreen extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            Uihelper.CustomButton(callback: () {}, buttonname: "Log In"),
+            Uihelper.CustomButton(
+                callback: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Bottomnav()));
+                },
+                buttonname: "Log In"),
             SizedBox(
               height: 10,
             ),
