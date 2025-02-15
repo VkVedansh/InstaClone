@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:instaclone/Screens/Tabscreen/tabscreen.dart';
 import 'package:instaclone/Uihelper/uihelper.dart';
+import 'package:instaclone/profilescreen/profilescreen.dart';
 
 class Profilenavigation extends StatelessWidget {
   const Profilenavigation({super.key});
@@ -174,6 +176,9 @@ class Profilenavigation extends StatelessWidget {
                       )
                     ]),
               ),
+            ),
+            Expanded(
+              child: TabBarView(children: [Profilescreen(), Tabscreen()]),
             )
           ],
         ),

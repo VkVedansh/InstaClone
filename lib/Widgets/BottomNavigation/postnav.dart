@@ -10,6 +10,10 @@ class postnavigation extends StatefulWidget {
 class _postnavigationState extends State<postnavigation> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Container(
+        child: Center(child: Text("Post Screen")),
+      ),
+    );
   }
 }
